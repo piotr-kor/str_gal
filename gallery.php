@@ -74,7 +74,7 @@ if (isset($_GET['img_id'])) {
             }
         }
 
-        echo '</div>';
+        echo '</div><br>';
     } else {
         // Wyświetlanie galerii wszystkich zdjęć, jeśli nie wybrano kategorii
         echo '<h2>All Photos</h2>';

@@ -43,9 +43,8 @@ if (isset($_GET['img_id'])) {
             $category_name = getCategoryName($photo['category_id'], $categories);
             echo '<h2>' . $photo['opis'] . '</h2>';
             echo '<img src="' . $photo['img'] . '" style="width:500px;"><br>';
-            echo '<p>Category: ' . $category_name . '</p>';
-            echo '<a href="gallery.php">Back to gallery</a>';
-            exit; // Zatrzymaj dalsze przetwarzanie
+            echo '<p>Kategoria: <a href="?id=4&category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
+            echo '<a href="?id=4">Back to gallery</a>';
         }
     }
 } else {
@@ -63,12 +62,12 @@ if (isset($_GET['img_id'])) {
                 if ($counter % 3 == 0 && $counter > 0) {
                     echo '<div style="flex-basis: 100%; height: 0;"></div>'; // Nowy wiersz po 3 miniaturach
                 }
-                echo '<div style="margin: 10px; text-align: center; flex-basis: 30%;">';
-                echo '<a href="gallery.php?img_id=' . $photo['img_id'] . '">';
+                echo '<div style="margin: 5px; text-align: center; flex-basis: 30%;">';
+                echo '<a href="?id=4&img_id=' . $photo['img_id'] . '">';
                 echo '<img src="' . $photo['img'] . '" style="width:150px; height:auto;"><br>';
                 echo '</a>';
                 echo '<p>' . $photo['opis'] . '</p>';
-                echo '<p>Category: <a href="gallery.php?category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
+                echo '<p>Category: <a href="?id=4&category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
                 echo '</div>';
                 $counter++;
             }
@@ -85,12 +84,12 @@ if (isset($_GET['img_id'])) {
             if ($counter % 3 == 0 && $counter > 0) {
                 echo '<div style="flex-basis: 100%; height: 0;"></div>'; // Nowy wiersz po 3 miniaturach
             }
-            echo '<div style="margin: 10px; text-align: center; flex-basis: 30%;">';
-            echo '<a href="gallery.php?img_id=' . $photo['img_id'] . '">';
+            echo '<div style="margin: 5px; text-align: center; flex-basis: 30%;">';
+            echo '<a href="?id=4&img_id=' . $photo['img_id'] . '">';
             echo '<img src="' . $photo['img'] . '" style="width:150px; height:auto;"><br>';
             echo '</a>';
             echo '<p>' . $photo['opis'] . '</p>';
-            echo '<p>Category: <a href="gallery.php?category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
+            echo '<p>Category: <a href="?id=4&category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
             echo '</div>';
             $counter++;
         }

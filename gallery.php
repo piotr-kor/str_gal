@@ -95,7 +95,7 @@ if (isset($_GET['img_id'])) {
             $counter++;
         }
 
-        echo '</div>';
+        echo '</div>.';
     }
 }
 ?>

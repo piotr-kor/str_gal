@@ -12,7 +12,7 @@ $photos = [
     ['img_id'=>9, 'img'=>'img/img9.jpg', 'opis'=>'A field of lavender.', 'category_id' => 2],
     ['img_id'=>10, 'img'=>'img/img10.jpg', 'opis'=>'A snowy forest.', 'category_id'=>1],
     ['img_id'=>11, 'img'=>'img/img11.jpg', 'opis'=>'Aerial view of coral.', 'category_id'=>3],
-    ['img_id'=>12, 'img'=>'img/img12.jpg', 'opis'=>'Market square.', 'category_id' => 2],
+    ['img_id'=>12, 'img'=>'img/img12.jpg', 'opis'=>'Market square.', 'category_id' => 3],
 ];
 
 // Tablica kategorii
@@ -20,6 +20,7 @@ $categories = [
     ['category_id'=>1, 'name'=>'Nature'],
     ['category_id'=>2, 'name'=>'Cityscapes'],
     ['category_id'=>3, 'name'=>'Wildlife'],
+    ['category_id'=>4, 'name'=>'New']
 ];
 
 // Funkcja zwracająca nazwę kategorii na podstawie jej ID

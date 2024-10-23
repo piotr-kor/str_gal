@@ -74,7 +74,7 @@ if (isset($_GET['img_id'])) {
             }
         }
 
-        echo '</div><br>';
+        echo '</div>';
     } else {
         // Wyświetlanie galerii wszystkich zdjęć, jeśli nie wybrano kategorii
         echo '<h2>All Photos</h2>';
@@ -95,7 +95,7 @@ if (isset($_GET['img_id'])) {
             $counter++;
         }
 
-        echo '</div>.';
+        echo '</div>';
     }
 }
 ?>

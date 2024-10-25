@@ -78,7 +78,7 @@ if (!isset($podstrony[$id])) {
 				</nav>
 				<section>
 					<h3>Reklamy</h3>
-					<p>Lorem ipsum dolor sit emet...</p>
+					<p>Pozdrowienia dla 4P...</p>
 				</section>
 				<section>
 					<h3>Social media</h3>

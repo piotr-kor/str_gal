@@ -82,7 +82,7 @@ if (!isset($podstrony[$id])) {
 				</section>
 				<section>
 					<h3>Social media</h3>
-					<p>nikodem</p>
+					<p>nikodemto</p>
 				</section>
 			</aside>
 		</div>

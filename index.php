@@ -83,17 +83,12 @@ if (!isset($podstrony[$id])) {
 				<section>
 					<h3>Social media</h3>
 					<p><?php
-	$link = "https://www.youtube.com/";
-
-
-			echo '<a href="' . $link . '">Przejdź do Youtube.com</a>';
-
-	$link = "https://www.tiktok.com/pl-PL/";
-
-
-		echo '<a href="' . $link . '"><br>Przejdź do TikTok.com</br></a>';
-		?>
-		</p>
+							$link = "https://www.youtube.com/";
+							echo '<a href="' . $link . '">Przejdź do Youtube.com</a>';
+							$link = "https://www.tiktok.com/pl-PL/";
+							echo '<a href="' . $link . '"><br>Przejdź do TikTok.com</br></a>';
+						?>
+					</p>
 				</section>
 			</aside>
 		</div>

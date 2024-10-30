@@ -23,6 +23,21 @@ $categories = [
     ['category_id'=>4, 'name'=>'New']
 ];
 
+$comments = [
+    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>5, 'tresc'=>'Ładne'],
+    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>3, 'tresc'=>'Dość ładne'],
+    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>4, 'tresc'=>'Bardzio ładne'],
+    ['comment_id'=>1, 'photo_id'=>2, 'ocena'=>4, 'tresc'=>'Jest spoko']
+];
+
+function photo_comment($photo_id, $comments_table) {
+    foreach ($comments_table as $comment) {
+        if ($photo_id == $comment['photo_id']){
+            echo 'Ocena: '.$comment['ocena'].' - '.$comment['tresc'].' <br>';
+        }
+    }
+  }
+
 // Funkcja zwracająca nazwę kategorii na podstawie jej ID
 function getCategoryName($category_id, $categories) {
     foreach ($categories as $category) {
@@ -44,8 +59,8 @@ if (isset($_GET['img_id'])) {
             $category_name = getCategoryName($photo['category_id'], $categories);
             echo '<h2>' . $photo['opis'] . '</h2>';
             echo '<img src="' . $photo['img'] . '" style="width:500px;"><br>';
-            echo '<p>Kategoria: <a href="?id=4&category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a></p>';
-            echo '<a href="?id=4">Back to gallery</a>';
+            photo_comment($img_id, $comments);
+            echo 'Kategoria: <a href="?id=4&category_id='.$photo['category_id'].'">'.getCategoryName($photo['category_id'], $categories).'</a>';
         }
     }
 } else {

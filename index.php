@@ -17,6 +17,9 @@ $podstrony = [
         'tresc' => 'To się nie wyświetli'
     ],
 ];
+
+include('social.php');
+
 // Pobieranie id podstrony z URL
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 1; // Domyślnie ustawiamy na 1
 
@@ -82,12 +85,7 @@ if (!isset($podstrony[$id])) {
 				</section>
 				<section>
 					<h3>Social media</h3>
-					<p><?php
-							$link = "https://www.youtube.com/";
-							echo '<a href="' . $link . '">Przejdź do Youtube.com</a>';
-							$link = "https://www.tiktok.com/pl-PL/";
-							echo '<a href="' . $link . '"><br>Przejdź do TikTok.com</br></a>';
-						?>
+					<p><?php social_links(); ?>
 					</p>
 				</section>
 			</aside>

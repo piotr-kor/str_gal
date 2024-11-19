@@ -24,10 +24,10 @@ $categories = [
 ];
 
 $comments = [
-    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>5, 'tresc'=>'Ładne'],
-    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>3, 'tresc'=>'Dość ładne'],
-    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>4, 'tresc'=>'Bardzio ładne'],
-    ['comment_id'=>1, 'photo_id'=>2, 'ocena'=>4, 'tresc'=>'Jest spoko']
+    ['comment_id'=>1, 'photo_id'=>1, 'ocena'=>5, 'tresc'=>'Hmm...'],
+    ['comment_id'=>2, 'photo_id'=>1, 'ocena'=>3, 'tresc'=>'Dość ładne'],
+    ['comment_id'=>3, 'photo_id'=>1, 'ocena'=>4, 'tresc'=>'Bardzio mi sie podoba'],
+    ['comment_id'=>4, 'photo_id'=>2, 'ocena'=>4, 'tresc'=>'Jest spoko']
 ];
 
 function photo_comment($photo_id, $comments_table) {

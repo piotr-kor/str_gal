@@ -1,31 +1,3 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generowanie Divów</title>
-    <style>
-        /* CSS */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%; 
-        }
-        .day-box {
-            width: 13.3%;
-            border: 1px solid black;
-            margin: 1px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-        }
-        .niedziela {
-            color: red;
-        }
-    </style>
-</head>
-<body>
 
 <div class="container">
     <!-- Nazwy dni tygodnia -->
@@ -54,6 +26,3 @@
     }
     ?>
 </div>
-
-</body>
-</html>

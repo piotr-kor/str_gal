@@ -16,6 +16,10 @@ $podstrony = [
         'nazwa' => 'Galeria',
         'tresc' => 'To się nie wyświetli'
     ],
+	5 => [
+        'nazwa' => 'Kalendarz',
+        'tresc' => 'To się nie wyświetli'
+    ],
 ];
 
 include('social.php');
@@ -33,14 +37,7 @@ if (!isset($podstrony[$id])) {
 <head>
     <meta charset="UTF-8">
     <title>Strona 1</title>
-	<style type="text/css">
-	@media only screen and (min-width: 900px) {
-		#kontener { width: 850px; margin: 0 auto 0 auto; }
-		main { float: left; width: 70%; }
-		aside { float: right; width: 28%; }
-		footer { clear: both; }
-		}
-	</style>
+	<link rel="stylesheet" href="styl.css">
 </head>
 <body>
 	<div id="kontener">
@@ -51,14 +48,18 @@ if (!isset($podstrony[$id])) {
 			<main>
 				<article>
 					<?php 
-                    if ($id!=4){
-                        echo '<h2>'.$podstrony[$id]['nazwa'].'</h2>'; 
-                        echo '<p>'.$podstrony[$id]['tresc'].'</p>';
-                    }
-                    else {
+                    if ($id==4){
                         echo '<h2>'.$podstrony[$id]['nazwa'].'</h2>';
-                        include ('gallery.php');  
+                        include ('gallery.php');
                     }
+                    elseif ($id==5) {
+                        echo '<h2>'.$podstrony[$id]['nazwa'].'</h2>';
+                        include ('cal.php');  
+                    }
+					else {
+						echo '<h2>'.$podstrony[$id]['nazwa'].'</h2>'; 
+                        echo '<p>'.$podstrony[$id]['tresc'].'</p>';
+					}
                     ?>
 					
 				</article>
